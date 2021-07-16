@@ -1,0 +1,80 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Azure Functions OpenAPI Extension",
+    "version": "1.0.0"
+  },
+  "host": "nintexxmltojson.azurewebsites.net",
+  "basePath": "/api",
+  "schemes": [
+    "https"
+  ],
+  "x-ntx-render-version": 2,
+  "paths": {
+    "/GetRssAsJson": {
+      "get": {
+        "tags": [
+          "url"
+        ],
+        "operationId": "Run",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "url",
+            "description": "url parameter of rss feed",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/simplifiedItem"
+              }
+            },
+            "examples": {
+              "application/json": "{\"title\":\"Hello World\",\"link\":\"https://example.com\",\"summary\":\"This is a summary\"}"
+            }
+          }
+        },
+        "security": [
+          {
+            "function_key": [ ]
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "simplifiedItem": {
+      "type": "object",
+	  "properties": {
+		"title": {
+			"title": "Title",
+			"type": "string"			
+		},
+		"link": {
+			"title": "Link",
+			"type": "string"
+		},
+		"summary": {
+			"title": "Summary",
+			"type": "string"
+		}
+	  }
+    }
+  },
+  "securityDefinitions": {
+    "function_key": {
+      "type": "apiKey",
+      "name": "code",
+      "in": "query"
+    }
+  }
+}

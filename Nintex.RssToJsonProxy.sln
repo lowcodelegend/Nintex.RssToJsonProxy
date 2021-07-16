@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30223.230
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintex.RssToJsonProxy", "Nintex.XmlToJsonProxy\Nintex.RssToJsonProxy.csproj", "{A81DF2E3-4D43-4CF6-AE45-F26D17DB6D0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A81DF2E3-4D43-4CF6-AE45-F26D17DB6D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81DF2E3-4D43-4CF6-AE45-F26D17DB6D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81DF2E3-4D43-4CF6-AE45-F26D17DB6D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81DF2E3-4D43-4CF6-AE45-F26D17DB6D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD62DDC6-8531-432C-9361-C4D38A48E145}
+	EndGlobalSection
+EndGlobal
